@@ -45,7 +45,7 @@ The larger the TF, the greater the weight in the sample. The larger the IDF, the
 Feature reduction: PCA　
 [here is code](https://github.com/qwjaskzxl/Text__classification/blob/master/PCA.py)
 
-## 6.Models
+## 6.Classification algorithms
 ### SVM
 ### RandowForest
 
