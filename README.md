@@ -26,17 +26,23 @@ The 9 types of corresponding labels are as follows:
     The way is to read the XML file from "etree", find the corresponding tag by "Find", and "XPath" return the content that needs to be tagged.
 ## 4.Pre Processing
   1. text processing as the format required by the model. <br>
-  2. participle. 3. go to the discontinuation of the word.
+  2. participle. <br>
+  3. go to the discontinuation of the word.<br>
 Participle: use the CWS segmentation model of Pyltp to process the whole text set and return a list of finished words.
 Get stop words: expand the scope of the stop words, and remove the strange words that appear only once in the whole training set.
 <!-- code：[c.py](:storage\7baa3ef0-d75e-4c64-bedc-f451dda79824\43150200.py)
  预处理的结果：[build_set.txt](:storage\3cb00c28-f19b-4703-bfdb-baa843b33176\cad4251d.txt) -->
 
 ## 5.Feature Engineering
-### 文本变向量、特征处理、特征选择、特征降维
-	文本变向量：TF_IDF，TF是样本的词频，IDF是逆文档频率，一个词语出现的词向量由这两个数据决定，
-	TF越大说明在样本中的权重越大，IDF越大说明在整个文档中出现的次数都是巨大的，权重会随之减少。
-	特征降维：PCA
+### Transforming text into vector, feature processing, feature selection and feature dimension reduction
+	Text variable vector: TF_IDF, 
+	TF is the sample word frequency, 
+	IDF is the inverse document frequency, 
+	the word vector of a word is determined by these two data.
+
+The larger the TF, the greater the weight in the sample. The larger the IDF, the greater the number of times in the whole document.
+
+Feature reduction: PCA
 代码：[predict.py](:storage\7baa3ef0-d75e-4c64-bedc-f451dda79824\f95c4f76.py)
 
 ## 6.Models
