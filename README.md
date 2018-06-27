@@ -25,10 +25,11 @@ The 9 types of corresponding labels are as follows:
    
     The way is to read the XML file from "etree", find the corresponding tag by "Find", and "XPath" return the content that needs to be tagged.
 ## 4.Pre Processing
-  预处理包括1.把文本处理为模型需要的格式。2.分词。3.去停用词。
-  分词：使用Pyltp的cws分词模型，将整个文本集进行处理，返回一个分完词的列表。
-  去停用词：扩充了停用词的范围，将整个训练集中只出现一次的怪词也作为停用词去掉。
-  预处理的代码：[etree.py](:storage\7baa3ef0-d75e-4c64-bedc-f451dda79824\43150200.py)
+  1. text processing as the format required by the model. <br>
+  2. participle. 3. go to the discontinuation of the word.
+Participle: use the CWS segmentation model of Pyltp to process the whole text set and return a list of finished words.
+Get stop words: expand the scope of the stop words, and remove the strange words that appear only once in the whole training set.
+  code：[c.py](:storage\7baa3ef0-d75e-4c64-bedc-f451dda79824\43150200.py)
   预处理的结果：[build_set.txt](:storage\3cb00c28-f19b-4703-bfdb-baa843b33176\cad4251d.txt)
 
 ## 5.Feature Engineering
