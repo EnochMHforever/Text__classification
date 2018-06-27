@@ -54,12 +54,12 @@ Feature reduction: PCA　
 ## 8.Optimization
 	Parameter adjustment method: due to lack of experience, the method of grid search for blanket search <br>
 	Specific: set up cartesian product list in python, combine two kinds of hyperparameters, and then choose a 
-			  hyperplane coefficient with the best fitting score in the model.Print the results of each output, 
-			  at the same time, analyze and compare manually.The results showed that C=[2-5],gamma=[0.2,0.3,0.4] 
-			  were significantly better than other combinations.It also achieves an effect comparable to that of 
-			  linear kernel function, indicating that every output result is simultaneously printed on the whole. 
-			  The analysis and comparison are conducted manually, and the idea of parameter adjustment is correct.<br>
+		  hyperplane coefficient with the best fitting score in the model.Print the results of each output, 
+		  at the same time, analyze and compare manually.The results showed that C=[2-5],gamma=[0.2,0.3,0.4] 
+		  were significantly better than other combinations.It also achieves an effect comparable to that of 
+		  linear kernel function, indicating that every output result is simultaneously printed on the whole. 
+		  The analysis and comparison are conducted manually, and the idea of parameter adjustment is correct.<br>
 	Analysis: C>1, which indicates that the model has a high penalty for error samples and a better fitting effect 
 	          for training sets.The test and train set are from the same text, and the gamma size is small, 
-			  indicating that each sample has a large impact on the hyperplane.
+		  indicating that each sample has a large impact on the hyperplane.
 
