@@ -52,10 +52,14 @@ Feature reduction: PCA　
 ## 7.Evaluation
 
 ## 8.Optimization
-	调参方法:由于经验不足，采取网格搜索的方法进行地毯式搜索
-	具体：在python中建立笛卡尔积列表，将两种超参数进行组合，然后在模型中，选择一个拟合分数最好的超平面系数。
-	同时打印每个输出的结果，人工进行分析比较，最终得出C=[2-5],gamma=[0.2,0.3,0.4]中的效果明显好于其他组合，
-	也达到了可以与线性核函数媲美的效果，说明整体调参思路正确。
-	分析：C>1，说明模型对于错误样本的惩罚会高，对于训练集的拟合效果会更好，为什么泛化效果也优，可能是因为我们的
-	测试机与训练集来自于同一文本，gamma大小偏小，说明每个样本对于超平面的影响是比较大的。
+	Parameter adjustment method: due to lack of experience, the method of grid search for blanket search <br>
+	Specific: set up cartesian product list in python, combine two kinds of hyperparameters, and then choose a 
+			  hyperplane coefficient with the best fitting score in the model.Print the results of each output, 
+			  at the same time, analyze and compare manually.The results showed that C=[2-5],gamma=[0.2,0.3,0.4] 
+			  were significantly better than other combinations.It also achieves an effect comparable to that of 
+			  linear kernel function, indicating that every output result is simultaneously printed on the whole. 
+			  The analysis and comparison are conducted manually, and the idea of parameter adjustment is correct.<br>
+	Analysis: C>1, which indicates that the model has a high penalty for error samples and a better fitting effect 
+	          for training sets.The test and train set are from the same text, and the gamma size is small, 
+			  indicating that each sample has a large impact on the hyperplane.
 
