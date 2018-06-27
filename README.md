@@ -29,8 +29,8 @@ The 9 types of corresponding labels are as follows:
   2. participle. 3. go to the discontinuation of the word.
 Participle: use the CWS segmentation model of Pyltp to process the whole text set and return a list of finished words.
 Get stop words: expand the scope of the stop words, and remove the strange words that appear only once in the whole training set.
-  [//]code：[c.py](:storage\7baa3ef0-d75e-4c64-bedc-f451dda79824\43150200.py)
-  [//]预处理的结果：[build_set.txt](:storage\3cb00c28-f19b-4703-bfdb-baa843b33176\cad4251d.txt)
+  ;code：[c.py](:storage\7baa3ef0-d75e-4c64-bedc-f451dda79824\43150200.py)
+  ;预处理的结果：[build_set.txt](:storage\3cb00c28-f19b-4703-bfdb-baa843b33176\cad4251d.txt)
 
 ## 5.Feature Engineering
 ### 文本变向量、特征处理、特征选择、特征降维
