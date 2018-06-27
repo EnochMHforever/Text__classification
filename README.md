@@ -43,7 +43,7 @@ Get stop words: expand the scope of the stop words, and remove the strange words
 The larger the TF, the greater the weight in the sample. The larger the IDF, the greater the number of times in the whole document.
 
 Feature reduction: PCA
-代码：[predict.py](:storage\7baa3ef0-d75e-4c64-bedc-f451dda79824\f95c4f76.py)
+[code]https://github.com/qwjaskzxl/Text__classification/blob/master/PCA.py
 
 ## 6.Models
 ### SVM
